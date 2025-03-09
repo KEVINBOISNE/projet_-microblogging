@@ -1,0 +1,35 @@
+<!-- activity_post.xml -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Champ pour saisir un nouveau post -->
+    <EditText
+        android:id="@+id/editTextNewPost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Écrivez votre post ici..."
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:gravity="top|start"
+        android:padding="10dp"/>
+
+    <!-- Bouton pour publier un nouveau post -->
+    <Button
+        android:id="@+id/buttonPublishPost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publier"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Liste des posts existants -->
+    <ListView
+        android:id="@+id/listViewPosts"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+</LinearLayout>
